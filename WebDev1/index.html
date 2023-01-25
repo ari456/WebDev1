@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashioncyclopedia</title>
     <link rel="stylesheet" href="styles.css">
+   
 
-</head>
-<body>
+<!--Navbar-->
+
 <nav class="navbar">
     <div class="navbar_container">
  <a href="/" id="navbar__logo">Fashioncyclopedia</a>   
@@ -25,9 +26,6 @@
         <a href="/About.html" class="navbar__links"> About </a>
     </li>
     <li class="navbar__item">
-        <a href="/Collections.html" class="navbar__links"> Collections </a>
-    </li>
-    <li class="navbar__item">
         <a href="/Designers.html" class="navbar__links"> Designers </a>
     </li>
     <li class="navbar__item">
@@ -37,6 +35,128 @@
 </nav>
 <script src="app.js"></script>
 
+<!--Hover Overlay;
+Note: align items-->
+<style>
+    .container {
+        position: relative;
+        width: auto;
+        display: inline-block;
+    }
+
+    .image{
+        width: auto;
+        height: 350px;
+    }
+
+.overlay {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+height: auto;
+width: auto;
+opacity: 0;
+transition: .5s ease;
+background-color: #fff;
+}
+
+.container:hover .overlay {
+opacity: 0.5;
+}
+
+.text {
+color: black;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <img src="https://process.fs.grailed.com/AJdAgnqCST4iPtnUxiGtTz/auto_image/cache=expiry:max/rotate=deg:exif/resize=height:700/output=quality:50/compress/2rHVl6HmTMmDeFJ8nFtf" style="height:270px; width:auto;">
+    <div class="overlay">
+</div>
+</div>
+<div class="container">
+    <img src="https://img-static.tradesy.com/item/29863807/oakley-silver-over-the-top-sunglasses-0-2-650-650.jpg" style="height:270px; width:auto;">
+    <div class="overlay">
+</div>
+</div>
+<div class="container">
+    <img src="https://cdn.shopify.com/s/files/1/0049/9112/products/maharishiEAGLEVS.SNAKEU.S.SNOPANTSOLIVEM4024_2.jpg?v=1665507297" style="height:270px; width:auto">
+    <div class="overlay">
+</div>
+</div>
+<div class="container">
+    <img src="https://news.artnet.com/app/news-upload/2022/12/46905221_1m.jpg" style="height:270px; width:auto">    <div class="overlay">
+</div>
+</div>
+<div class="container">
+    <img src="https://i.pinimg.com/originals/b7/f3/72/b7f37294937d3ba613ed98be86d3dd16.png" style="height:270px; width:auto;">
+    <div class="overlay">
+</div>
+</div>
+<div class="container">
+    <img src="https://i.pinimg.com/236x/c8/e7/b7/c8e7b766dc499c57c073096bf4ba3a01.jpg" style="height:270px; width:auto;">
+    <div class="overlay">
+</div>
+</div>
+<div class="container">
+    <img src="https://i.pinimg.com/236x/02/99/88/02998838c6afc178fb153cf9691fa970.jpg" style="height:270px; width:auto;">
+    <div class="overlay">
+</div>
+</div>
+<div class="container">
+    <img src="https://i.pinimg.com/236x/14/3f/f4/143ff476c10d4be20c694ab2c40c4a01.jpg" style="height:270px; width: 270px;">
+    <div class="overlay">
+</div>
+</div>
+<div class="container">
+    <img src="https://i.pinimg.com/236x/b2/f6/cb/b2f6cb8e883c59a570490165cf8ce069.jpg" style="height:270px; width:auto;">
+    <div class="overlay">
+</div>
+</div>
+<div class="container">
+    <img src="https://i.pinimg.com/236x/d7/4a/25/d74a258072f4da68a26bbeb940a7c829.jpg" style="height:270px; width:auto;">
+    <div class="overlay">
+</div>
+</div>
+<div class="container">
+    <img src="https://i.pinimg.com/236x/e6/87/bf/e687bf2b6762b413c1dc09798131440d.jpg" style="height:270px; width:auto;">
+    <div class="overlay">
+</div>
+</div>
+<div class="container">
+    <img src="https://i.pinimg.com/236x/db/95/d3/db95d30455ce27c52566fc10720b4570.jpg" style="height:270px; width:auto;">
+    <div class="overlay">
+</div>
+</div>
+<div class="container">
+    <img src="https://i.pinimg.com/236x/2a/2d/c4/2a2dc40f6cb65e144d52b9e8bfb4485a.jpg" style="height: 270px; width: auto;">
+    <div class="overlay">
+</div>
+</div>
+<div class="container">
+    <img src="https://i.pinimg.com/236x/a4/5c/61/a45c61cd8b93967dbe94e6d032b58a03.jpg" style="height: 270px; width:auto;">
+    <div class="overlay">
+</div>
+</div>
+<div class="container">
+    <img src="https://i.pinimg.com/236x/1e/e3/bd/1ee3bd9f0c9a9ae17d6c969ad69d5f68.jpg" style="height:270px; width:auto;">
+    <div class="overlay">
+</div>
+</div>
+</body>
+</html>
+
 <!--So glad that I finally figured out how to add images to my page! 
 
 syntax used for images: <img src="Copied+Pasted_Image_Address" style="Dimensions"
@@ -45,21 +165,4 @@ For me anyway, the images are the star of the show because the garments are so m
  If there is a way to give these images transparent backgrounds without editing and re-uploading from PS, even better. I don't like boxes around my images. 
  I'll figure out my options on that later.
 I also want to experiment with the size of each image so that my pages are more visually appealing.
-I am also open to feedback regarding the used syntax for images [line 42]-->
-
-<img src="https://img-static.tradesy.com/item/29863807/oakley-silver-over-the-top-sunglasses-0-2-650-650.jpg" style="height:300px; width:auto;">
-<img src="https://news.artnet.com/app/news-upload/2022/12/46905221_1m.jpg" style="height:350px; width:auto">
-<img src="https://cdna.lystit.com/1040/1300/n/photos/ssense/db086f0f/helmut-lang-black-Black-Pleasure-Boots.jpeg" style="height:300px; width:auto;">
-<img src="https://i.pinimg.com/originals/b7/f3/72/b7f37294937d3ba613ed98be86d3dd16.png" style="height:350px; width:auto;">
-<img src="https://i.pinimg.com/236x/c8/e7/b7/c8e7b766dc499c57c073096bf4ba3a01.jpg" style="height:300px; width:auto;">
-<img src="https://i.pinimg.com/236x/02/99/88/02998838c6afc178fb153cf9691fa970.jpg" style="height:300px; width:auto;">
-<img src="https://i.pinimg.com/236x/14/3f/f4/143ff476c10d4be20c694ab2c40c4a01.jpg" style="height:300px; width: 300px;">
-<img src="https://i.pinimg.com/236x/b2/f6/cb/b2f6cb8e883c59a570490165cf8ce069.jpg" style="height:300px; width:auto;">
-<img src="https://i.pinimg.com/236x/d7/4a/25/d74a258072f4da68a26bbeb940a7c829.jpg" style="height:300px; width:auto;">
-<img src="https://i.pinimg.com/236x/e6/87/bf/e687bf2b6762b413c1dc09798131440d.jpg" style="height:300px; width:auto;">
-<img src="https://i.pinimg.com/236x/db/95/d3/db95d30455ce27c52566fc10720b4570.jpg" style="height:300px; width:auto;">
-<img src="https://i.pinimg.com/236x/2a/2d/c4/2a2dc40f6cb65e144d52b9e8bfb4485a.jpg" style="height: 350px; width: auto;">
-<img src="https://i.pinimg.com/236x/a4/5c/61/a45c61cd8b93967dbe94e6d032b58a03.jpg" style="height: 240px; width:auto;">
-<img src="https://i.pinimg.com/236x/1e/e3/bd/1ee3bd9f0c9a9ae17d6c969ad69d5f68.jpg" style="height:300px; width:auto;">
-</body>
-</html>
+I am also open to feedback regarding the used syntax for images-->
